@@ -6,3 +6,5 @@ This project is a microservices-based application designed to handle user authen
 # Kafka Integration:
 **producer-Consumer Model:** Each microservice has its own Kafka producer and consumer. Producers are responsible for publishing events to Kafka topics, while consumers subscribe to these topics to process incoming events. The auth microservice's producer publishes events related to user registration and login, while the post microservice's producer publishes events related to post creation. Consumers react to these events accordingly.
 **Topics:** Kafka topics serve as communication channels between microservices. Events related to user registration and post creation are published to separate topics. This segregation ensures efficient event handling within each microservice, allowing for clear and scalable communication.
+# API DOCS:
+Complete REST API Documentation can be found: [Here](https://documenter.getpostman.com/view/28704515/2sA3JM61RS)
